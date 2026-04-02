@@ -1,0 +1,19 @@
+# Spider asset generation config
+# Run: dart run spider build
+generate_tests: false
+no_comments: true
+export: true
+use_part_of: true
+use_references_list: false
+
+# Generated files land in lib/gen/
+package: gen
+
+groups:
+  - path: assets/icons
+    class_name: AppIcons
+    types: [ .png, .jpg, .jpeg, .webp ]
+
+  - path: assets/avatars
+    class_name: AppAvatars
+    types: [ .png, .jpg, .jpeg, .webp ]
